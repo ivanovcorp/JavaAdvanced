@@ -1,5 +1,6 @@
 package Lab;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -10,7 +11,6 @@ public class p08_BoundedNumbers
 
     public static void main(String[] args)
     {
-
         Scanner sc = new Scanner(System.in);
         List<Integer> bounds = Arrays.asList(sc.nextLine().split("\\s+")).stream().map(Integer::valueOf).sorted().collect(Collectors.toList());
         int lowerBound = bounds.get(0);
